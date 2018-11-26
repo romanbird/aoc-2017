@@ -9,8 +9,8 @@ while True:
     while i != maxx:
         x[(location+1+i)%len(x)]+=1
         i+=1
-    if tuple(x) in backlog:
+    if backlog.count(tuple(x)) == 2:
         break
     backlog.append(tuple(x))
 print(x)
-print(len(backlog)+1)
+print((len(backlog)+1)-12841)
