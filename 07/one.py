@@ -2,7 +2,7 @@ raw = open("input.txt")
 class line:
     def __init__(self, line):
         self.name=line.split(" ")[0]
-        self.number=line[line.index("(")+1:line.index(")")]
+        self.weight=line[line.index("(")+1:line.index(")")]
         if line.find(">")!=-1:
             self.roots=line[line.find(">")+2:].split(", ")
         else:
